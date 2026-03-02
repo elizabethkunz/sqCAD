@@ -10,6 +10,7 @@
 import os
 import sys
 from datetime import date
+import sphinx_nameko_theme
 
 sys.path.insert(0, os.path.abspath("../../src"))
 
@@ -31,7 +32,9 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+
+html_theme_path = [sphinx_nameko_theme.get_html_theme_path()]
+html_theme = "nameko"
 html_static_path = ['_static']
 
 
@@ -49,10 +52,10 @@ html_theme = "pydata_sphinx_theme"
 html_title = "sqCAD"
 
 html_theme_options = {
-    "github_url": "https://github.com/elizabethkunz/sqcad",
-    "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
-    "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    # "github_url": "https://github.com/elizabethkunz/sqcad",
+    # "navbar_start": ["navbar-logo"],
+    # "navbar_center": ["navbar-nav"],
+    # "navbar_end": ["theme-switcher", "navbar-icon-links"],
 }
 
 html_logo = "_static/sqcad_logo.png"   # optional

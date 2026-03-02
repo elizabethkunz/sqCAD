@@ -10,7 +10,22 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Elizabeth Kunz"}]
-dependencies = []
+dependencies = [
+  "numpy",
+  "scipy",
+  "scikit-rf",
+  "matplotlib",
+]
 
 [project.urls]
 Homepage = "https://github.com/elizabethkunz/sqcad"
+
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx-nameko-theme",
+  "sphinx-design",
+  "myst-parser",
+  "numpy",
+]
