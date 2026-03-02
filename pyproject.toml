@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sqcad"
+version = "0.0.1"
+description = "Superconducting quantum circuit analysis & design tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Elizabeth Kunz"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/elizabethkunz/sqcad"
