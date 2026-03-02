@@ -33,10 +33,7 @@ extensions = [
 ]
 
 templates_path = ["_templates"]
-exclude_patterns = [
-    "tutorials.rst",
-    "tutorials/**",
-]
+exclude_patterns = []
 
 autosummary_generate = True
 
